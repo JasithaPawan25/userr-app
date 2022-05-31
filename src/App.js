@@ -13,6 +13,7 @@ import Ccall from './components/oneissue';
 import CallissueCounter from './components/allissue';
 import CissueCountertwo from './components/cissuecountertwo';
 import CissueCounterthree from './components/cissuecounterthree';
+import CounterChecker from './components/counterChecker';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
      <Route exact path="/cissuecounterthree" component={CissueCounterthree} />
      <Route exact path="/call/:iid" component={Ccall} />
      <Route exact path="/callissue" component={CallissueCounter} />
+     <Route exact path="/countercheker" component={CounterChecker} />
+     
 
     <div>
      <NavBar / >

@@ -1,11 +1,16 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import {Link , useHistory} from 'react-router-dom';
 
 function NavBar(props){
   //const user =getUser();
 
-  const handleLogout  = ()=>{
-    props.history.push('/');
+  const handleLoogout  = ()=>{
+    localStorage.removeItem('publicjwt')
+    //notifications
+    localStorage.removeItem('notifications')
+    // let history = useHistory()
+    // history.push('/');
+    window.location.href = `/`;
   }
 
 
@@ -40,12 +45,12 @@ function NavBar(props){
         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit">Search</button> */}
        
-     
+      </form>
         <input type="button"
          value="Logout" 
-         onClick={handleLogout} 
+         onClick={handleLoogout} 
          class="btn btn-outline-info" />
-          </form>
+         
      
     </div>
   </div>

@@ -40,7 +40,7 @@ function CLogin(props){
 
     // setUserSession
       //response.data.name
-      props.history.push('/cissuecounter')
+      props.history.push('/countercheker')
    //   console.log("response >>>",response);
     }).catch(error=>{
       setLoading(false)
@@ -67,7 +67,7 @@ function CLogin(props){
             
 
             <div className="container">
-            <h1 style={{marginTop:"25px"}}>Welcome to TellBell Conter</h1>
+            <h1 style={{marginTop:"25px"}}>Welcome to TellBell Counter</h1>
    
 <div class="card" style={{width: "50%",marginTop:"10%",marginLeft:"25%",backgroundColor:"#E2E3F8"}} >
  

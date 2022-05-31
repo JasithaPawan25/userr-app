@@ -30,13 +30,18 @@ function Login(props){
       setLoading(false);
     //  props.history.push('/issue')
    //  setUserSession(response.data.token);
+
    localStorage.setItem('publicjwt',response.data.token)
+   localStorage.setItem('publicUserNo',response.data.user)
+
 
    const publicuserToken= localStorage.getItem('publicjwt')
+   const publicUserNo= localStorage.getItem('publicUserNo')
 
 
 
   console.log("publicuserToken", publicuserToken)
+  console.log("publicUserNo", publicUserNo)
     // setUserSession
       //response.data.name
       props.history.push('/issue')

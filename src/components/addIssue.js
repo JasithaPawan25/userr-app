@@ -62,14 +62,31 @@ function AddIssue(props){
 
   }
 
+
   
 
-
+  
+  if(token ==null)
+  {
+    props.history.push('/');
+  }
 
 
   const handleLogout  = ()=>{
     props.history.push('/');
   }
+
+
+  // if(token ==null)
+  // {
+  //   return(
+  //     <h1>ERROR</h1>
+  //    // props.history.push('/');
+
+  //   )
+  // }
+  // else
+  // {
 
 
     return(
@@ -142,5 +159,7 @@ function AddIssue(props){
 
         </div>
     )
+
+ // }
 }
 export default AddIssue;
